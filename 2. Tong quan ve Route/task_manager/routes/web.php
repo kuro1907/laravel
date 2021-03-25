@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -46,3 +48,9 @@ Route::prefix('customer')->group(function () {
         return view('modules.customer.delete');
     });
 });
+
+Route::get('/email-validation', function () {
+    return view('modules.email-validation.index');
+});
+
+Route::post('/check-email', [UserController::class, 'validationEmail'])->name('check-email');
