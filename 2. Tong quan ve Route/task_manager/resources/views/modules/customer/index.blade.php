@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
     <h1>Danh sách khách hàng</h1>
+    <a type="button" class="btn btn-user btn-primary" href="/customer/create">Thêm khách hàng</a>
+    <br>
     <table border="1">
         <thead>
             <tr>
@@ -25,42 +28,7 @@
                 <td>01234567890</td>
                 <td>email.test@mail.com</td>
                 <td>
-                    <a href="#">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a& </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Nguyễn Văn B</td>
-                <td>01234567890</td>
-                <td>email.test@mail.com</td>
-                <td>
-                    <a href="#">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a>
-                </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Nguyễn Văn C</td>
-                <td>01234567890</td>
-                <td>email.test@mail.com</td>
-                <td>
-                    <a href="#">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a>
-                </td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Nguyễn Văn D</td>
-                <td>01234567890</td>
-                <td>email.test@mail.com</td>
-                <td>
-                    <a href="#">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a>
-                </td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Nguyễn Văn E</td>
-                <td>01234567890</td>
-                <td>email.test@mail.com</td>
-                <td>
-                    <a href="#">Xem</a> | <a href="#">Sửa</a> | <a href="#">Xóa</a>
+                    <a href="/customer/detail">Xem</a> | <a href="/customer/edit">Sửa</a> | <a href="/customer/delete">Xóa</a>
                 </td>
             </tr>
         </tbody>
